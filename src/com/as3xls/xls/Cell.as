@@ -37,7 +37,7 @@ package com.as3xls.xls {
 				d.fullYear = dateMode == ExcelFile.BASE1899 ? 1899 : 1904;
 				d.month = dateMode == ExcelFile.BASE1899 ? 11: 0;
 				d.date = dateMode == ExcelFile.BASE1899 ? 30 : 0;
-				d.date += _value + 1;
+				d.date += _value;
 				ret = d;
 			} 
 			return ret; 
